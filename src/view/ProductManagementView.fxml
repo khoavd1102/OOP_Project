@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="522.0" prefWidth="680.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.productController.ProductManagementController">
+   <children>
+      <VBox prefHeight="522.0" prefWidth="680.0">
+         <children>
+            <Pane prefHeight="70.0" prefWidth="680.0">
+               <children>
+                  <TextField fx:id="searchTextField" layoutX="14.0" layoutY="20.0" prefHeight="30.0" prefWidth="380.0" />
+                  <Button id="button" fx:id="searchBtn" layoutX="419.0" layoutY="22.0" mnemonicParsing="false" stylesheets="@css/style.css" text="Search" />
+               </children>
+            </Pane>
+            <Pane prefHeight="357.0" prefWidth="680.0">
+               <children>
+                  <TableView fx:id="medicineTableView" layoutY="-1.0" prefHeight="357.0" prefWidth="680.0">
+                     <columns>
+                        <TableColumn fx:id="idMedicineTableViewCol" minWidth="4.800018310546875" prefWidth="40.0" text="ID" />
+                        <TableColumn fx:id="nameMedicineTableViewCol" prefWidth="140.0" text="Name" />
+                        <TableColumn fx:id="priceMedicineTableViewCol" prefWidth="128.0" text="Price" />
+                        <TableColumn fx:id="typeMedicineTableViewCol" minWidth="0.0" prefWidth="114.4000244140625" text="Type" />
+                        <TableColumn fx:id="descriptionMedicineTableViewCol" prefWidth="263.20001220703125" text="Description" />
+                     </columns>
+                  </TableView>
+               </children>
+            </Pane>
+            <Pane prefHeight="95.0" prefWidth="680.0">
+               <children>
+                  <Button id="button" fx:id="addBtn" layoutX="95.0" layoutY="33.0" mnemonicParsing="false" onAction="#addBtnOnAction" prefHeight="30.0" prefWidth="85.0" stylesheets="@css/style.css" text="Add" />
+                  <Button id="button" fx:id="updateBtn" layoutX="230.0" layoutY="33.0" mnemonicParsing="false" onAction="#updateBtnOnAction" prefHeight="30.0" prefWidth="85.0" stylesheets="@css/style.css" text="Update" />
+                  <Button id="button" fx:id="deleteBtn" layoutX="365.0" layoutY="33.0" mnemonicParsing="false" onAction="#deleteBtnOnAction" prefHeight="30.0" prefWidth="85.0" stylesheets="@css/style.css" text="Delete" />
+                  <Button id="button" fx:id="moreDetailBtn" layoutX="500.0" layoutY="33.0" mnemonicParsing="false" onAction="#moreDetailBtnOnAction" prefHeight="30.0" prefWidth="85.0" stylesheets="@css/style.css" text="More details" />
+               </children>
+            </Pane>
+         </children>
+      </VBox>
+   </children>
+</Pane>

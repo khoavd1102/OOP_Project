@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="MainPane" prefHeight="522.0" prefWidth="900.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.MainController">
+   <children>
+      <VBox fx:id="leftPane" prefHeight="522.0" prefWidth="220.0" style="-fx-background-color: #21b6a8;">
+         <children>
+            <Pane fx:id="medicalPane" prefHeight="200.0" prefWidth="200.0">
+               <children>
+                  <Label fx:id="medicalLabel" layoutX="57.0" layoutY="83.0" text="MEDICAL">
+                     <font>
+                        <Font name="System Bold" size="24.0" />
+                     </font></Label>
+               </children>
+            </Pane>
+            <JFXButton fx:id="productManagementBtn" alignment="BASELINE_LEFT" onAction="#productManagementBtnOnAction" prefHeight="90.0" prefWidth="220.0" text="Product &#10;Management">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="invoiceListBtn" alignment="BASELINE_LEFT" onAction="#invoiceListBtnOnAction" prefHeight="90.0" prefWidth="220.0" text="Invoice list">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+            <JFXButton fx:id="sellBtn" alignment="BASELINE_LEFT" onAction="#sellBtnOnAction" prefHeight="90.0" prefWidth="220.0" text="Sell">
+               <font>
+                  <Font size="18.0" />
+               </font>
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </JFXButton>
+         </children>
+      </VBox>
+      <Pane fx:id="rightPane" layoutX="220.0" prefHeight="522.0" prefWidth="680.0" />
+   </children>
+</AnchorPane>

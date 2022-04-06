@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="336.0" prefWidth="491.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.invoiceController.InvoiceDetailsController">
+   <children>
+      <Label fx:id="invoiceDateLabel" layoutX="14.0" layoutY="291.0" text="Invoice date: ">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <Label fx:id="totalLabel" layoutX="275.0" layoutY="291.0" text="Total: ">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+      <TableView fx:id="orderDetailsTableView" prefHeight="283.0" prefWidth="491.0">
+         <columns>
+            <TableColumn fx:id="medicineIdCol" prefWidth="74.39999389648438" text="Medicine ID" />
+            <TableColumn fx:id="nameCol" prefWidth="104.0" text="Medicine name" />
+            <TableColumn fx:id="quantityCol" prefWidth="104.79998779296875" text="Quantity" />
+            <TableColumn fx:id="unitPriceCol" prefWidth="90.39996337890625" text="Unit Price" />
+            <TableColumn fx:id="amountCol" prefWidth="114.4000244140625" text="Amount" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="440.0" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.productController.UpdateController">
+   <children>
+      <Label layoutX="70.0" layoutY="21.0" prefHeight="18.0" prefWidth="32.0" text="Name" />
+      <Label layoutX="72.0" layoutY="69.0" text="Price" />
+      <Label layoutX="43.0" layoutY="218.0" text="Discription" />
+      <TextField fx:id="nameTextField" layoutX="134.0" layoutY="17.0" prefHeight="26.0" prefWidth="202.0" />
+      <TextField fx:id="priceTextField" layoutX="134.0" layoutY="64.0" prefHeight="26.0" prefWidth="202.0" />
+      <TextArea fx:id="discriptionTextArea" layoutX="134.0" layoutY="218.0" prefHeight="102.0" prefWidth="202.0" />
+      <Label layoutX="73.0" layoutY="119.0" text="Type" />
+      <Button id="button" fx:id="saveBtn" layoutX="134.0" layoutY="339.0" mnemonicParsing="false" onAction="#saveBtnOnAction" prefHeight="30.0" prefWidth="85.0" stylesheets="@css/style.css" text="Save" />
+      <Button id="button" fx:id="cancelBtn" layoutX="250.0" layoutY="339.0" mnemonicParsing="false" onAction="#cancelBtnOnAction" prefHeight="30.0" prefWidth="85.0" stylesheets="@css/style.css" text="Cancel" />
+      <ChoiceBox fx:id="typeChoiceBox" layoutX="134.0" layoutY="115.0" prefHeight="26.0" prefWidth="202.0" />
+      <DatePicker fx:id="expiryDatePicker" layoutX="134.0" layoutY="166.0" prefHeight="26.0" prefWidth="202.0" />
+      <Label layoutX="43.0" layoutY="170.0" text="Expiry date" />
+   </children>
+</AnchorPane>
